@@ -6,15 +6,43 @@
     <title>How to set up React, Webpack, and Babel</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-4 offset-md-1">
-                <p>Test</p>
-                <div id="create-article-form">
-                    <!-- form -->
-                </div>
-            </div>
-        </div>
+  <h1>Index Analyzer</h1>
+
+  <div class="mdc-text-field mdc-text-field--textarea">
+    <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+    <div class="mdc-notched-outline">
+      <div class="mdc-notched-outline__leading"></div>
+      <div class="mdc-notched-outline__notch">
+        <label for="textarea" class="mdc-floating-label">Paste URLs here</label>
+      </div>
+      <div class="mdc-notched-outline__trailing"></div>
     </div>
+  </div>
+
+  <div>
+    <button id="analyzeStart" class="foo-button mdc-button">Button</button><br />
+  </div>
+
+  <div role="progressbar" class="mdc-linear-progress mdc-linear-progress--closed">
+    <div class="mdc-linear-progress__buffering-dots"></div>
+    <div class="mdc-linear-progress__buffer"></div>
+    <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+      <span class="mdc-linear-progress__bar-inner"></span>
+    </div>
+    <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+      <span class="mdc-linear-progress__bar-inner"></span>
+    </div>
+  </div>
+
+  <div id="list">
+    <ul class="mdc-list">
+    </ul>
+  </div>
+
+
+  <span>Page is indexed:</span><span id="isIndexed"></span><br />
+  <span>Result title:</span><span id="resultTitle"></span><br />
+  <span>Result meta description:</span><span id="resultMeta"></span><br />
+  <iframe id="foo" height="300" width="1000"></iframe>
 </body>
 </html>

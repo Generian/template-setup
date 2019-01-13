@@ -1,10 +1,18 @@
 @import 'colors';
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+@import "@material/list/mdc-list";
+@import "@material/linear-progress/mdc-linear-progress";
+
 $theme-font: verdana, sans-serif;
 
 body {
   font: $theme-font;
-  background-color: $blue;
   h1, h2 {
-      color: #fafafa;
   }
 }
+
+// .foo-button {
+//   @include mdc-button-ink-color(teal);
+//   @include mdc-states(teal);
+// }

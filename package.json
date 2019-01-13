@@ -35,5 +35,13 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@material/button": "^0.43.0",
+    "@material/linear-progress": "^0.43.0",
+    "@material/list": "^0.43.0",
+    "@material/ripple": "^0.43.0",
+    "@material/textfield": "^0.43.0",
+    "jquery": "^3.3.1",
+    "jssoup": "0.0.10"
+  }
 }

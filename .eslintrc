@@ -2,7 +2,16 @@
   parser: "babel-eslint",
   "rules": {
     "no-unused-vars": "off",
+    "linebreak-style": "off",
+    "no-multiple-empty-lines": "off",
+    "comma-dangle": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-loop-func": "off",
     "max-len": [1, 120, 2, {ignoreComments: true}]
+  },
+  "env": {
+    "browser": true
   },
   "extends": ["airbnb-base"]
 }
