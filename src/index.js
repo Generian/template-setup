@@ -86,6 +86,10 @@ function appendList(item) {
   </li>`);
 }
 
+function setProgress(p) {
+  progress.progress = p;
+}
+
 progress.determinate = true;
 progress.open();
 
@@ -98,11 +102,10 @@ document.getElementById('analyzeStart').onclick = () => {
   const linksLen = links.length;
 
   for (let i = 0; i < links.length; i++) {
-    setTimeout(() => {
-      console.log(links[i]);
-      appendList(links[i]);
-      progress.progress = (i + 1) / linksLen;
-    }, 1000);
+    console.log(links[i]);
+    appendList(links[i]);
+    setProgress((i + 1) / linksLen);
+    wait(1000);
   }
 };
 
